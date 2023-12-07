@@ -1,0 +1,821 @@
+/* Index.html content begins here */
+body{
+    background-color: black;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white ;
+}
+
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 480px)
+{
+    .top-bar-wrapper { 
+    height: 5vh;}
+}
+.top-bar-wrapper{
+    box-sizing: border-box;
+    /* border:1px solid white; */
+    width: 100%;
+    height: 3.1rem;
+    background-color: black;
+    line-height: 3rem;
+    border-bottom: 0.1rem gold solid;
+    position:fixed;
+    z-index: 1;
+}
+.top-bar{
+    width: 100%;
+    height: 3rem;
+
+}
+
+.menu{
+    float: left;
+}
+
+.top{
+    display: inline-flex;
+    margin-left: 10px;
+    font-size: 3vw;
+    color: yellow;
+}
+
+.top:hover{
+    color: tomato;
+}
+
+.dropdown{
+    display: inline-block;
+    margin-left:10px;
+    font-size: 3vw;
+}
+
+
+.dropdownbutton{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdownbutton:hover{
+    color: red;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    overflow: auto;
+    font-size: 1rem;
+}
+
+.dropdown-content a{
+    display: block;
+    color: white;
+    padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.home{
+    font-size: 2vw;
+    font-weight: bold;
+    padding-left: 1.5rem;
+}
+
+.button1{
+    background-color: rgba(19, 56, 219, 0.863);
+    color: white;
+}
+
+.button1:hover{
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 680px)
+{
+    .shortcut { 
+    display: none;}
+}
+
+.shortcut{
+    margin: 0.1rem auto;
+    padding-right: 1.5rem;
+    float: right;
+    list-style: none;   
+}
+
+.shortcut li{
+    float: left;    
+    text-align: right;
+    padding-left: 1.5rem;    
+    font-size: 2vw;
+    font-weight: lighter; 
+}
+
+/* top-bar-wrapper content ends here */
+
+.headline{
+    text-align: center;
+    font-size: 10vw;
+    color: white;
+    font-weight: bolder;
+    /* padding-top: 3.1rem; */
+}
+
+.sub-headline{
+    text-align: center;
+    font-size:4vw;
+    color: rgba(0, 0, 0, 0.8);
+    padding-top: 1rem;
+}
+
+.sub-headline-intro{
+    font-size: 2vw;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.indexheadlines{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 480px)
+{
+    .backgroundvideo { width: 60%; }
+}
+.backgroundvideo{
+    position:absolute;
+    top:0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    z-index: -1;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height: 900px;
+    /* object-fit: fill; */
+
+} 
+
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 480px)
+{
+    .backgroundmusic { width: 60%; }
+}
+.backgroundmusic{
+    padding-top: 1rem;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+
+.frontpage{
+    height: 1000px;
+    margin:0 auto;
+    position: relative;
+}
+
+/* frontpage content ends here */
+
+.index-introduction{
+    box-sizing: border-box;
+    margin:1rem auto;
+    padding:10px;
+    width: 85rem;
+    /* height: 4000px; */
+    text-align: center;
+    font-size: 1.25rem;
+    display: inline;
+    /* border:10px solid white; */
+}
+
+.index-introduction-text{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 10PX;
+}
+
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 480px)
+{
+    .index-introduction-description { width: 80%; }
+}
+.index-introduction-description {
+    padding-bottom: 45px;
+     max-width: 60rem; 
+    /*padding: calc(30.5vh - 500px) 15px 0; */
+    margin: 0 auto;  
+}
+
+
+.index-introduction-companies{
+    font-size: 30px;
+    border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
+
+}
+
+.meta-icon, .nvidia-icon, .neuralink-icon{
+    max-width: 120px;
+    max-height: 120px;
+    overflow: hidden;
+    /* display: flex; */
+    margin: 0.5rem auto;
+    padding: 20px;
+}
+
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 480px)
+{
+    .meta, .nvidia, .neuralink { width:85%;}
+
+}
+.meta, .nvidia, .neuralink{
+    /* display: inline; */
+    max-width: 55rem;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    /* font-size: 20px; */
+    /* font-size: calc(100%/5); */
+}
+.meta-markzuckerbergvideo{
+    margin: 20px;
+    font-weight: bold;
+}
+
+.meta-markzuckerbergvideo-text{
+    border-bottom:1px solid gold;
+}
+
+.meta-icon:hover{
+    border-bottom:0.1px solid gold;
+}
+.nvidia-icon:hover{
+    border-bottom:0.1px solid gold;
+}
+.neuralink-icon:hover{
+    border-bottom:0.1px solid gold;
+}
+
+.index-email{
+    font-size: 1.25vw;
+    padding-top: 4vw;
+}
+
+/* index-introduction content ends here */
+.index-footer{
+    /* border:10px solid white; */
+    box-sizing:border-box;
+    width: 100%;
+    display:inline-flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.index-footer-text{
+    /* border:10px solid white; */
+    font-size: 0.8vw;
+    margin:auto;
+    text-align: right;
+
+}
+
+
+.index-footer-icon-md{
+    /* border:10px solid white; */
+    width:60px;
+    height: 60px;
+    margin:0 auto;
+}
+
+.index-footer-icon-md .s2{
+    width:auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+/* index content ends here */
+/*  */
+
+.definition{
+    /* border:1vw solid white; */
+    border-top: 2.1rem solid black;
+    margin: 0 auto;
+}
+
+.definition-text{
+    /* border:1px solid white; */
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 8vw;
+}
+
+.literaldefinition, .companiesopinions, .newsagencies, .wikipedia{
+    box-sizing: border-box;
+    border:1px solid white;
+    margin: 1rem 1.5rem;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.literaldefinition-text{
+    box-sizing: border-box;
+    margin:0 3vw;
+    padding: 0 3rem;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.literaldefinition-text:hover{
+    border-bottom:1.5px solid skyblue;
+}
+
+.companiesopinions-meta{
+    box-sizing: border-box;
+    margin:0 3vw;
+    padding: 0 3rem;
+    text-align: left;
+    font-size: 1.5vw;
+}
+
+.companiesopinions-meta:hover{
+    border-bottom:1.5px solid skyblue;
+}
+
+.companiesopinions-nvidia{
+    box-sizing: border-box;
+    margin:2vh 3vw;
+    padding: 0 3rem;
+    text-align: right;
+    font-size: 1.5vw;
+}
+
+.companiesopinions-nvidia:hover{
+    border-bottom:1.5px solid skyblue;
+}
+
+.newsagencies-newyorktimes{
+    box-sizing: border-box;
+    margin:0 3vw;
+    padding: 0 3rem;
+    text-align: left;
+    font-size: 1.5vw;
+}
+
+.newsagencies-newyorktimes:hover{
+    border-bottom:1.5px solid skyblue;
+}
+
+.newsagencies-theguardian{
+    box-sizing: border-box;
+    margin:2vh 3vw;
+    padding: 0 3rem;
+    text-align: right;
+    font-size: 1.5vw;
+}
+
+.newsagencies-theguardian:hover{
+    border-bottom:1.5px solid skyblue;
+}
+
+.wikipedia-text{
+    box-sizing: border-box;
+    margin:0 3vw;
+    margin-bottom: 5vh;
+    padding: 0 3rem;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.wikipedia-text:hover{
+    border-bottom:1.5px solid skyblue;
+}
+
+/* what it is ends here */
+/*  */
+
+.howitworks{
+    border-top: 2.1rem solid black;
+    margin: 0 auto;
+}
+
+.title-howitworks{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.x-realities{
+    /* border:1px solid white; */
+    margin:1rem 7vw;
+    margin-top: 0;
+    text-align: center;
+    font-size: 8vw;
+
+}
+
+.xrealities-explain{
+    font-size: 1.5vw;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.virtual-reality{
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+    /* border-bottom: 1px solid white; */
+}
+
+.vr-text{
+    font-size:1.5vw;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 2vh;
+}
+
+.representative{
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.vr-text-wiki{
+    padding-top: 2vh;
+}
+
+.vr-text-wiki:hover{
+    border-bottom:1px solid skyblue;
+}
+
+.vr-text-brit{
+    text-align: right;
+    padding-top: 2vh;
+}
+
+.vr-text-brit:hover{
+    border-bottom: 1px solid skyblue;
+}
+
+.vr-table{
+    margin:0 auto;
+    margin-bottom: 3vh;
+}
+
+.vr-meta{
+    font-size: 2vw;
+}
+
+.vr-steam{
+    font-size: 2vw;
+}
+
+.vr-meta-png{
+    max-width: 30vw;
+}
+
+.vr-meta-png:hover{
+    border-bottom: 1px solid gold;
+}
+
+.vr-steam-jpg{
+    max-width: 30vw;
+}
+
+.vr-steam-jpg:hover{
+    border-bottom: 1px solid gold;
+}
+
+.augmented-reality{
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ar-text{
+    font-size:1.5vw;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 2vh;
+}
+
+.ar-text-wiki{
+    padding-top: 2vh;
+}
+.ar-text-investo{
+    text-align: right;
+    padding-top: 2vh;
+}
+
+.ar-google{
+    font-size: 2vw;
+}
+
+.ar-apple{
+    font-size: 2vw;
+}
+
+.ar-google-png{
+    max-width: 35vw;
+}
+
+.ar-apple-png{
+    max-width: 35vw;
+}
+
+.ar-table{
+    margin:0 auto;
+    margin-bottom: 3vh;
+    padding-left: 0;
+}
+
+.mixed-reality{
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mr-text{
+    font-size:1.5vw;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 2vh;
+}
+
+.mr-text-wiki{
+    padding-top: 2vh;
+}
+
+.mr-text-microsoft{
+    text-align: right;
+    padding-top: 2vh;
+}
+
+.mr-microsoft{
+    font-size: 2vw;
+}
+
+.mr-hololens2{
+    max-width: 30vw;
+}
+
+/* How it works content ends here */
+/*  */
+
+.whereitgoes{
+    border-top: 3.1rem solid black;
+    margin: 0 auto;
+}
+
+.future{
+    margin:1rem 7vw;
+    margin-top: 0;
+    text-align: center;
+    font-size: 5.5vw;
+}
+
+.matrix{
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.clicktowatch{
+    text-decoration: underline;
+}
+
+.matrix-video{
+    font-size: 2vw;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+#matrix{
+    padding-bottom: 2vh;
+    width: 80vw;
+}
+
+
+.matrix-wiki{
+    font-size:1.5vw;
+    font-weight: normal;
+    text-align: center;
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+    padding-bottom: 2vh;
+}
+
+.matrix-wiki:hover{
+    border-bottom: 1px solid skyblue;
+}
+
+.ready-player-one{
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ready-player-one-video{
+    font-size: 2vw;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+#playerone{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 80vw;
+}
+
+.ready-player-one-wiki{
+    font-size:1.5vw;
+    font-weight: normal;
+    text-align: center;
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+    padding-bottom: 2vh;
+}
+
+.ready-player-one-wiki:hover{
+    border-bottom: 1px solid skyblue;
+}
+
+.matthew-article-title{
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 20vw;
+}
+
+#metaverse-future{
+width: 60vw;
+    padding-bottom: 2vh;
+}
+
+.matthew-article{
+    font-size:1.5vw;
+    font-weight: normal;
+    text-align: center;
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+    padding-bottom: 2vh;
+}
+
+.matthew-article:hover{
+    border-bottom: 1px solid skyblue;
+}
+
+/* where it goes content ends here */
+/*  */
+
+.news{
+    border-top: 3.1rem solid black;
+    margin: 0 auto;
+}
+
+.news-title{
+    margin:0 7vw;
+    text-align: center;
+    font-size: 5.5vw;
+}
+
+.news-underconstruction{
+    font-size: 1.5vw;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    color: lightgray;
+}
+
+.news-search{
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.searchbox{
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.searchbutton{
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.news-reports{
+    border:1px solid white;
+    margin: 1vh 10vw;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.financialtimes-title{
+    font-weight: normal;
+    font-style: italic;
+    padding-top: 1vh;
+}
+
+.financialtimes-brief{
+    font-style: normal;
+    font-size: 1.5vw;
+    padding: 1vh 5vw;
+}
+
+.financialtimes-brief:hover{
+    text-decoration: underline;
+}
+
+/* latest news content ends here */
+/*  */
+
+.forum{
+    border-top: 3.1rem solid black;
+    margin: 0 auto;
+}
+
+.forumtitle{
+    font-size: 6vw;
+    text-align: center;
+    padding-top:1vh;
+}
+
+.forum-register-img{
+    text-align: center;
+    margin: 2vh auto;
+}
+
+#forum-register{
+    height: 22vh;
+}
+
+.forum-register-text{
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.forum-underconstruction{
+    font-size: 1.2vw;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 2vh;
+    color: lightgray;
+}
+
+.register-box{
+    margin: 1vh auto;
+    display: block;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.register-new{
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+    margin: 2vh auto;
+}
